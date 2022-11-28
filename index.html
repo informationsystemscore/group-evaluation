@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Group Evaluation</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body onload="configure()">
+    <div class="testbox">
+      <form id="form1" action="/">
+        <h1 id="title" onclick ="submit_form()">Group Evaluation</h1>
+        <p>If you are not <span  id="student_name">student_name</span>, you have followed the wrong link. Please check you email for the correct one and use it to make your submission.  Please rate your group members on the folloing criteria.</p>
+        <hr />
+        <div id="evals">
+        </div>
+        <h4>Feel free to write any additional comments.</h4>
+        <textarea rows="5" id="comment"></textarea>
+        </form>
+        <form id="form2" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScttjFKr-lphGqROYbAml71s-SJuoeiK-0gZXdqWwT6Ymr_xw/formResponse" method="POST">
+            <input type="hidden" name="entry.1989094498" id="netid" value="default">
+            <input type="hidden" name="entry.1902558021" id="form_title">
+            <input type="hidden" name="entry.229559376" id="data">
+            <input type="hidden" name="entry.1534555674" id="stud_name">
+            <input type="hidden" name="entry.1063923633" id="comment2">
+            <div class="btn-block">
+            <button onclick="return submit_form()">Submit</button>
+          </div>
+
+        </form>
+    </div>
+</body>
+</html>

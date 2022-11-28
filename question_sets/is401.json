@@ -1,0 +1,11 @@
+{   "header":"IS 401",
+    "questions":[
+        {   "text":"Contributed to the IS 401 term project",
+            "labels":"intra_group"
+        },
+        {   "text":"Contributed to other IS 401 group assignments",
+            "labels":"intra_group"
+        }
+
+    ]
+}
