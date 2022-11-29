@@ -30,6 +30,12 @@ async function configure(netid){
     document.getElementById("waiting").style.display="block"
     survey=await server_request({netid:netid})
     document.getElementById("waiting").style.display="none"
+    if(survey.status==="error"){
+        // bad net id
+        document.getElementById("netid").style.display="block"
+        document.getElementById("message").innerHTML=survey.message
+        return
+    }
     document.getElementById("body").style.display="block"
     //const params = atob(window.location.search.substr(1)).split("|")
     document.getElementById("title").innerHTML=survey.title
