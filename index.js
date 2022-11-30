@@ -50,6 +50,7 @@ async function configure(netid){
     }
     
     document.getElementById("student_name").innerHTML = survey.group[netid]
+    document.getElementById("student_name2").innerHTML = survey.group[netid]
     
 
 
