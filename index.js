@@ -20,12 +20,12 @@ function fill_random(){
                 row.children[random_number].children[0].checked=true
             }
         }
-    
     }
     document.getElementById("comment").value="This survey was randomly generated"
 }
 
-async function configure(netid){
+async function configure(raw_netid){
+    const netid = raw_netid.trim().toLowerCase()
     document.getElementById("netid").style.display="none"
     document.getElementById("waiting").style.display="block"
     survey=await server_request({netid:netid})
